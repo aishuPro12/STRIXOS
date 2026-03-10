@@ -1353,12 +1353,12 @@ select.inp { cursor: pointer; }
 /* Color palette grid */
 .palette-grid {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 8px;
-  margin-top: 10px;
+ width: min(100%, 620px);
+  grid-template-columns: repeat(auto-fit, minmax(92px, 1fr));
+  gap: 10px;
 }
 .palette-swatch {
-  height: 36px;
+  height: 46px;
   border-radius: 10px;
   cursor: pointer;
   border: 2px solid transparent;
@@ -3986,7 +3986,7 @@ function initExtended() {
 const COLOR_PALETTES = [
   { name: 'Tyrian Purple', accent: '#b026ff', accent2: '#ff2d78', accent3: '#7c3aff', label: '👑' },
   { name: 'Strix Green',   accent: '#00e5a0', accent2: '#ff5f7e', accent3: '#5fb8ff', label: '🟢' },
-  { name: 'Viridian',      accent: '#40826d', accent2: '#00e5a0', accent3: '#2d9e7e', label: '🌿' },
+  { name: 'Viridian',      accent: '#2f7f6d', accent2: '#66d9b5', accent3: '#4db6ac', label: '🌿' },
   { name: 'Cyber Violet',  accent: '#c084fc', accent2: '#f472b6', accent3: '#818cf8', label: '🟣' },
   { name: 'Solar Orange',  accent: '#fb923c', accent2: '#f43f5e', accent3: '#fbbf24', label: '🟠' },
   { name: 'Ice Blue',      accent: '#38bdf8', accent2: '#818cf8', accent3: '#34d399', label: '🔵' },
